@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --sidebar-font-size: 18px;
+  --header-font-size: 16px;
+  --button-font-size: 14px;
+  --cards-font-size: 12px;
+  --weight: 600;
+  --weight2: 700;
+
+  /* universal colors */
+  --failed-transaction: #ffeded;
+  --danger-color: #f21115;
+  --successful-transaction: #edfff8;
+  ---success-color: #02b369;
+  --pending-transaction: #fff5ea;
+  --pending-color: #c47010;
+  --side-bar: #011745;
+  --hover-state: #bfd3ff;
+  --table-header: #23232475;
+  --outline-border: 1px solid #cbcdcc;
+  --input: #cbcdcc4d;
+  --payment-input-disabled: #bfd3ff30;
+}
+

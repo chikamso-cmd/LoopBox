@@ -11,6 +11,7 @@
   --header-font-size: 16px;
   --button-font-size: 14px;
   --cards-font-size: 12px;
+  --small-font-size: 10px;
   --weight: 600;
   --weight2: 700;
 
@@ -24,7 +25,142 @@
   --side-bar: #011745;
   --hover-state: #bfd3ff;
   --table-header: #23232475;
-  --outline-border: 1px solid #cbcdcc;
+  --outline-border: #cbcdcc;
   --input: #cbcdcc4d;
   --payment-input-disabled: #bfd3ff30;
+  --white: #fff;
+}
+.container {
+  width: 700px;
+  height: 500px;
+  padding: 1rem;
+  border-radius: 1rem;
+  /* background-color: red; */
+  overflow: hidden;
+  margin: 0 auto;
+}
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.login-hero {
+  background: url(../assets/login_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 469px;
+  width: 675px;
+  color: var(--white);
+  text-transform: capitalize;
+  padding: 1rem;
+}
+.login-hero h1 {
+  font-size: var(--sidebar-font-size);
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.login-hero p {
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+.login-form {
+  width: 675px;
+  padding: 2rem;
+  /* background: red; */
+}
+.login-form img {
+  margin-top: 1rem;
+  width: 30%;
+  margin-bottom: 1.3rem;
+}
+.form-container h5 {
+  text-transform: capitalize;
+  text-align: left;
+  font-size: var(--button-font-size);
+}
+.form-container {
+  text-align: left;
+}
+.form-container p {
+  font-size: 8px;
+  margin-top: 0.5rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.form-container label {
+  text-transform: capitalize;
+  font-size: var(--card-font-size);
+}
+.form-container input[type="email"],
+input[type="password"] {
+  width: 100%;
+  line-height: 1.5rem;
+  border-radius: 0.3rem;
+  height: 2rem;
+  padding: 0.2rem;
+  border: 1px solid #ccc;
+  margin-top: 0.3rem;
+}
+.form-container input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  text-transform: capitalize;
+  font-size: 11px;
+  font-weight: lighter;
+}
+.password {
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.password label,
+.email label {
+  font-size: 14px;
+  font-weight: 400;
+}
+.radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+.radio h6 {
+  font-weight: 300;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.radio label {
+  /* background: red; */
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.2rem;
+  font-size: var(--small-font-size);
+}
+.submit-btn {
+  width: 100%;
+  padding: 0.3rem;
+  border: 0;
+  border-radius: 0.2rem;
+  background: var(--side-bar);
+  color: var(--white);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.form-container h6 {
+  text-align: center;
+  margin-top: 0.6rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 0.5rem;
+}
+.form-container h6 span {
+  color: var(--side-bar);
+  font-weight: 500;
+}
+.form-container a{
+  text-decoration: none;
+  color: var(--side-bar)
 }

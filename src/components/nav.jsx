@@ -7,7 +7,6 @@ function Navigation() {
       <div className="overview-content">
         <div className="intro">
           <h1> overview</h1>
-          <hr />
           <p>apr 2025</p>
         </div>
         <div className="profile">

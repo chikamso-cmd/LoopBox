@@ -1,6 +1,7 @@
 import '../styles/sidebar.css';
 import logo from '../assets/logo.png'
 import '../styles/base.css';
+import { Link } from 'react-router-dom';
 
 
 function Sidebar () {
@@ -16,7 +17,7 @@ function Sidebar () {
               </li>
               <li>
                 <span className="material-symbols-outlined">credit_card</span>
-                payments
+                <Link to='/payment'/>
               </li>
               <li>
                 <span className="material-symbols-outlined">groups</span>

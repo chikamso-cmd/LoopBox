@@ -14,10 +14,7 @@
   align-items: center;
   text-transform: capitalize;
   gap: 0.5rem;
-}
-hr {
-  width: 0.1rem;
-  height: 0.7rem;
+  width: 10rem
 }
 .intro h1 {
   font-size: 14px;

@@ -5,6 +5,7 @@ import styles from '../modules/shared.module.css';
 
 function Login() {
   
+  
   return (
     <section className="container">
       <div className="login-wrapper">
@@ -17,6 +18,7 @@ function Login() {
         </div>
         <div className="login-form">
           <img src={logo} alt="loopbox-logo" />
+          
           <form className="form-container">
             <h5>sign in to loopBox</h5>
             <p>
@@ -59,6 +61,7 @@ function Login() {
         </div>
       </div>
       <Link to="/main">Main</Link>
+      <Link to="/modal">Modal</Link>
     </section>
   );
 }

@@ -113,13 +113,15 @@ label {
   gap: 0.6rem;
 }
 hr {
-  width: 7.5em;
+  width: 7em;
   background: #ccc;
   border: 1px solid #ccc;
   text-transform: capitalize;
 }
 .hr p {
   color: #484949;
+  /* background: red; */
+  width: 10rem
 }
 .signin-methods {
   display: flex;

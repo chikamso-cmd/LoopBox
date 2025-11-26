@@ -20,17 +20,17 @@ ChartJS.register(
 const ContributionChart = () => {
 
   const contributions = [
-    { month: "January", amount: 10000 },
-    { month: "February", amount: 9000 },
-    { month: "March", amount: 43000 },
-    { month: "April", amount: 12000 },
+    { month: "Jan", amount: 10000 },
+    { month: "Feb", amount: 9000 },
+    { month: "Mar", amount: 43000 },
+    { month: "Apr", amount: 12000 },
     { month: "May", amount: 8000 },
     { month: "June", amount: 20000 },
     { month: "July", amount: 13000 },
-    { month: "August", amount: 22000 },
-    { month: "September", amount: 15000 },
-    { month: "October", amount: 66000 },
-    { month: "November", amount: 51100 },
+    // { month: "Aug", amount: 22000 },
+    // { month: "Sept", amount: 15000 },
+    // { month: "Oct", amount: 66000 },
+    // { month: "Nov", amount: 51100 },
   ];
 
   const data = {
@@ -47,7 +47,7 @@ const ContributionChart = () => {
   };
   const options = {
     responsive: true,
-    maintainAspectRatio: false,
+    maintainAspectRatio: true,
     plugins: {
       title: {
         display: true,
@@ -57,7 +57,7 @@ const ContributionChart = () => {
   };
 
   return (
-    <div className="chart-container" style={{ height: "200px" }}>
+    <div className="chart-container">
       <Bar data={data} options={options} />
     </div>
   );

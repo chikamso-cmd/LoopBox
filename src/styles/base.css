@@ -27,10 +27,11 @@
   --table-header: #23232475;
   --outline-border: #cbcdcc;
   --input: #cbcdcc4d;
+  --input-50: #5a5c5bb2;
   --payment-input-disabled: #bfd3ff30;
   --white: #fff;
 }
-hr{
-   background-color: transparent;
-    border: 1px solid #cccccc35;
+hr {
+  background-color: transparent;
+  border: 1px solid #cccccc35;
 }

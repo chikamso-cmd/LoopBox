@@ -58,7 +58,7 @@ function Signup() {
             <div className="signin-method">
               <div className="hr">
                 <hr />
-                <p>or signin with</p>
+                <p>or sign in with</p>
                 <hr />
               </div>
             </div>

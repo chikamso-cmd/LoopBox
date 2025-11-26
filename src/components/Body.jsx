@@ -4,8 +4,10 @@ import Cards from "./card";
 import Members from "./members";
 import Navigation from "./nav";
 import Upcomingbills from "./upcomingbills";
+
  
 function Body() {
+  
   return (
     <section className="body-container">
       <Navigation />

@@ -4,14 +4,14 @@ function Cards() {
   return (
     <div className="card-wrapper">
       <div className="cards">
-        {/* card content goes here */}
+       
         <div className="card">
           <h5>$900,000</h5>
           <div className="icon">
             <span className="material-symbols-outlined">
               account_balance_wallet
             </span>
-            <p>total balance</p>
+            <p>available balance</p>
           </div>
         </div>
         <div className="card">

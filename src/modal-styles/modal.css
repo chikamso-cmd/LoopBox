@@ -1,0 +1,163 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  width: 360px;
+  height: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+  border-top: 0.5rem solid var(--side-bar);
+  text-transform: capitalize;
+  position: relative;
+}
+.modal .close{
+    background: var(--payment-input-disabled);
+    color: var(--side-bar);
+    font-size: 1.3rem;
+    position: absolute;
+    padding: .3rem;
+    right: 1rem;
+    border-radius: .4rem;
+    top: .7rem;
+    cursor: pointer;
+}
+.modal-header {
+  margin-bottom: 0.4rem;
+}
+.modal-header h1 {
+  font-size: 0.7rem;
+}
+.modal-header p {
+  font-size: 0.5rem;
+  font-weight: lighter;
+}
+.modalbody {
+  background-color: var(--payment-input-disabled);
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid var(--outline-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-input h5 {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+.modal-input h4 {
+  font-size: 0.7rem;
+  margin-top: 0.43em;
+}
+.modalbody span {
+  background-color: var(--side-bar);
+  color: #fff;
+  padding: 0.3rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+}
+.modal-form {
+  margin-top: 1rem;
+}
+.modal-form label {
+  font-size: 0.6rem;
+}
+.modal-form input {
+  margin-bottom: 0.9rem;
+}
+.modal-form select {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  background: var(--input);
+  border: 0;
+  font-size: 0.5rem;
+  text-transform: capitalize;
+  overflow: hidden;
+  color: var(--input-50);
+}
+.transfer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #111;
+}
+.disabled::placeholder {
+  margin-left: 0.6rem;
+  padding: 0rem 1.5rem;
+  color: var(--input-50) !important;
+  font-weight: 600;
+}
+.transfer span {
+  font-size: 1rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.8rem;
+  color: var(--outline-border);
+}
+.addaccount {
+  width: 100%;
+  margin-top: 0.7rem;
+  padding: 0.6rem;
+  background: transparent;
+  border-radius: 0.3rem;
+  border: 1px solid var(--outline-border);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 0.6rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+/* .addaccount:hover {
+  background-color: var(--payment-input-disabled);
+  color: var(--side-bar);
+} */
+.btns {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: flex-end;
+  /* background: #000; */
+  width: 70%;
+  margin-left: 5.8rem;
+}
+.btns button {
+  padding: 0.4rem 0.5rem;
+  text-transform: capitalize;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+button:first-child {
+  background-color: transparent;
+  border: 1px solid var(--outline-border);
+  color: var(--side-bar);
+  border-radius: 0.3rem;
+}
+.continue {
+  background-color: var(--side-bar);
+  border-radius: 0.3rem;
+  color: #fff;
+  border: 0;
+}
+.overlay.show .modal {
+  transform: translateY(0);
+}

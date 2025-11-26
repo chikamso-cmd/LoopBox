@@ -35,33 +35,17 @@ border-radius: 10px;
 
 icons
 
-<span className="material-symbols-outlined">
-grid_view
-</span>
-<span className="material-symbols-outlined">
-settings
-</span>
+
+
 <span className="material-symbols-outlined">
 login
 </span>
-<span className="material-symbols-outlined">
-credit_card
-</span>
-<span className="material-symbols-outlined">
-swap_horiz
-</span>
-<span className="material-symbols-outlined">
-groups
-</span>
-<span className="material-symbols-outlined">
-account_balance_wallet
-</span>
-<span className="material-symbols-outlined">
-upload
-</span>
-<span className="material-symbols-outlined">
-docs
-</span>
+
+
+
+
+
+
 <span className="material-symbols-outlined">
 account_balance
 </span>
@@ -71,9 +55,7 @@ content_copy
 <span className="material-symbols-outlined">
 savings
 </span>
-<span className="material-symbols-outlined">
-notifications
-</span>
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 

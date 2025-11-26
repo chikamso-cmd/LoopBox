@@ -1,6 +1,8 @@
 import "../styles/signup.css";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import google from '../assets/Google.png';
+import apple from '../assets/apple.png';
 
 function Signup() {
   return (
@@ -22,17 +24,17 @@ function Signup() {
               you need to have registered and verify as a member before you can
               proceed
             </p>
-            <div className="isername">
+            <div className="username">
               <label>username</label>
-              <input type="text" name="" id="" placeholder="username..." />
+              <input type="text" name="" id="username" placeholder="username..." required />
             </div>
-            <div className="emai">
+            <div className="email1">
               <label>email</label>
-              <input type="email" name="" id="" placeholder="email..." />
+              <input type="email" name="" id="email" placeholder="email..." required />
             </div>
             <div className="password">
               <label>password</label>
-              <input type="password" name="" id="" placeholder="password..." />
+              <input type="password" name="" id="password" placeholder="password..." required />
             </div>
 
             <div className="confirm">
@@ -40,28 +42,39 @@ function Signup() {
               <input
                 type="password"
                 name=""
-                id=""
-                placeholder="confirm-password..."
+                id="confirm-password"
+                placeholder="confirm-password..." required
               />
             </div>
-            <input type="checkbox" name="" id="" />
-            <label>
-              by creating an account, you agree to our privacy policy
-            </label>
-            <button type="submit">sign up</button>
+            <div className="checkbox">
+              <input type="checkbox" name="" id="" />
+              <label>
+                by creating an account, you agree to our privacy policy
+              </label>
+            </div>
+            <button className="submit-btn" type="submit">
+              sign up
+            </button>
             <div className="signin-method">
               <div className="hr">
                 <hr />
                 <p>or signin with</p>
                 <hr />
-                          </div>
-                          
-                      </div>
-                      <div className="btns">
-                          <button type="submit" className="google">sign up with google</button>
-                          <button type="submit" className="apple">sign up with apple id</button>
-                      </div>
-                      <h6>alredy have an account? <Link to="/">login</Link></h6>
+              </div>
+            </div>
+            <div className="signin-methods">
+              <button type="submit" className="google">
+                <img src={google} alt="google-icon" />
+                google
+              </button>
+              <button type="submit" className="apple">
+                <img src={apple} alt="google-icon" />
+                apple id
+              </button>
+            </div>
+            <h6>
+              alredy have an account? <Link to="/">login</Link>
+            </h6>
           </form>
         </div>
       </div>

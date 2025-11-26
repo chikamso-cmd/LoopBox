@@ -35,7 +35,7 @@
   height: 500px;
   padding: 1rem;
   border-radius: 1rem;
-  /* background-color: red; */
+  text-align: center;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -96,22 +96,7 @@
   text-transform: capitalize;
   font-size: var(--card-font-size);
 }
-.form-container input[type="email"],
-input[type="password"] {
-  width: 100%;
-  line-height: 1.5rem;
-  border-radius: 0.3rem;
-  height: 2rem;
-  padding: 0.2rem;
-  border: 1px solid #ccc;
-  margin-top: 0.3rem;
-}
-.form-container input[type="email"]::placeholder,
-input[type="password"]::placeholder {
-  text-transform: capitalize;
-  font-size: 11px;
-  font-weight: lighter;
-}
+
 .password {
   margin-top: 0.5rem;
   margin-bottom: 0.4rem;
@@ -120,6 +105,7 @@ input[type="password"]::placeholder {
 .email label {
   font-size: 14px;
   font-weight: 400;
+  text-align: left;
 }
 .radio {
   display: flex;
@@ -133,7 +119,6 @@ input[type="password"]::placeholder {
   cursor: pointer;
 }
 .radio label {
-  /* background: red; */
   display: flex;
   flex-direction: row-reverse;
   gap: 0.2rem;

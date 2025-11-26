@@ -1,0 +1,40 @@
+import '../styles/sidebar.css';
+import logo from '../assets/logo.png'
+import '../styles/base.css';
+
+
+function Sidebar () {
+    return (
+      <section className="sidebar-container">
+        <div className="sidebar-wrapper">
+          <img src={logo} alt="loopbox-logo" />
+          <div className="links">
+            <ul>
+              <li className="active">
+                <span className="material-symbols-outlined">grid_view</span>
+                overview
+              </li>
+              <li>
+                <span className="material-symbols-outlined">credit_card</span>
+                payments
+              </li>
+              <li>
+                <span className="material-symbols-outlined">groups</span>
+                members
+              </li>
+              <li>
+                <span className="material-symbols-outlined">swap_horiz</span>
+                transactions
+              </li>
+              <li>
+                <span className="material-symbols-outlined">settings</span>
+                settings
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    );
+}
+ 
+export default Sidebar;

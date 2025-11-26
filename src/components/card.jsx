@@ -1,0 +1,46 @@
+import "../styles/card.css";
+
+function Cards() {
+  return (
+    <div className="card-wrapper">
+      <div className="cards">
+        {/* card content goes here */}
+        <div className="card">
+          <h5>$900,000</h5>
+          <div className="icon">
+            <span className="material-symbols-outlined">
+              account_balance_wallet
+            </span>
+            <p>total balance</p>
+          </div>
+        </div>
+        <div className="card">
+          <h5>$180,000</h5>
+          <div className="icon">
+            <span className="material-symbols-outlined">
+              account_balance_wallet
+            </span>
+            <p>total withdrawn</p>
+          </div>
+        </div>
+        <div className="card">
+          <h5>$90,000</h5>
+          <div className="icon">
+            <span className="material-symbols-outlined">
+              account_balance_wallet
+            </span>
+            <p>total contributed</p>
+          </div>
+        </div>
+        <div className="card">
+          <h5>45</h5>
+          <div className="icon">
+            <span className="material-symbols-outlined">groups</span>
+            <p>total members</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+export default Cards;

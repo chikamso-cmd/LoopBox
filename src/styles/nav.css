@@ -1,0 +1,44 @@
+@import url(base.css);
+
+.overview {
+  padding: 1rem;
+  border-bottom: 1px solid var(--outline-border);
+}
+.overview-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  gap: 0.5rem;
+}
+hr {
+  width: 0.1rem;
+  height: 0.7rem;
+}
+.intro h1 {
+  font-size: 14px;
+}
+.intro p {
+  font-size: 10px;
+  color: var(--outline-border);
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  text-transform: capitalize;
+  font-size: 10px;
+  font-weight: 600;
+}
+.profile img {
+  border-radius: 50%;
+  width: 7%;
+}
+.profile span{
+  font-size: 17px;
+}

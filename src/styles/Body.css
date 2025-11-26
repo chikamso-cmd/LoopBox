@@ -1,0 +1,11 @@
+@import url(base.css);
+
+.body-container{
+    /* background: pink; */
+    width: 70%;
+}
+.users{
+    display: flex;
+    gap: .7rem;
+    padding: .7rem;
+}

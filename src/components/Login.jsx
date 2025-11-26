@@ -1,6 +1,7 @@
 import "../styles/login.css";
 import logo from "../assets/logo.png";
-import {  Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import styles from '../modules/shared.module.css';
 
 function Login() {
   
@@ -35,7 +36,7 @@ function Login() {
             </div>
             <div className="password">
               <label>password</label>
-              <input
+              <input className={styles.inputField}
                 type="password"
                 name=""
                 id="password"
@@ -57,6 +58,7 @@ function Login() {
           </form>
         </div>
       </div>
+      <Link to="/main">Main</Link>
     </section>
   );
 }

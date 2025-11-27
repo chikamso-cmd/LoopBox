@@ -2,10 +2,15 @@
 
 .body-container{
     /* background: pink; */
-    width: 70%;
+    width: 100%;
 }
 .users{
     display: flex;
     gap: .7rem;
     padding: .7rem;
+}
+@media screen and (max-width:768px) {
+    .users{
+flex-wrap: wrap;
+    }
 }

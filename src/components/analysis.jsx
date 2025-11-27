@@ -31,7 +31,7 @@ function Analysis() {
           <p> chioma favour</p>
           <h6> total amt $ 90,000</h6>
           <Modal isOpen={isOpen} onClose={() => setisOpen(false)} />
-          <button onClick={() => setisOpen(true)}>withdraw</button>
+          <button onClick={() => setisOpen(true)} className="withdraw">withdraw</button>
         </div>
       </div>
     </div>

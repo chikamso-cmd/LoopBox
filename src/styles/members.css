@@ -50,3 +50,8 @@ hr{
     width: 100%;
     height: .1px;
 }
+@media screen and (max-width:768px) {
+    .members{
+width: 100%
+    }
+}

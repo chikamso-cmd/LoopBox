@@ -61,7 +61,7 @@ function Login() {
         </div>
       </div>
       <Link to="/main">Main</Link>
-      <Link to="/modal">Modal</Link>
+      {/* <Link to="/modal">Modal</Link> */}
     </section>
   );
 }

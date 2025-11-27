@@ -30,16 +30,16 @@
   text-transform: capitalize;
   position: relative;
 }
-.modal .close{
-    background: var(--payment-input-disabled);
-    color: var(--side-bar);
-    font-size: 1.3rem;
-    position: absolute;
-    padding: .3rem;
-    right: 1rem;
-    border-radius: .4rem;
-    top: .7rem;
-    cursor: pointer;
+.modal .close {
+  background: var(--payment-input-disabled);
+  color: var(--side-bar);
+  font-size: 1.3rem;
+  position: absolute;
+  padding: 0.3rem;
+  right: 1rem;
+  border-radius: 0.4rem;
+  top: 0.7rem;
+  cursor: pointer;
 }
 .modal-header {
   margin-bottom: 0.4rem;
@@ -128,34 +128,33 @@
   cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
-/* .addaccount:hover {
-  background-color: var(--payment-input-disabled);
-  color: var(--side-bar);
-} */
-.btns {
+.action-btn {
   display: flex;
   gap: 0.6rem;
   justify-content: flex-end;
   /* background: #000; */
   width: 70%;
   margin-left: 5.8rem;
+  margin-top: 3.5rem;
 }
-.btns button {
-  padding: 0.4rem 0.5rem;
+.action-btn button {
+  /* padding: 0.4rem 0.5rem; */
   text-transform: capitalize;
   font-size: 0.6rem;
   cursor: pointer;
 }
-button:first-child {
+.cancel-btn {
   background-color: transparent;
   border: 1px solid var(--outline-border);
   color: var(--side-bar);
   border-radius: 0.3rem;
+  padding: 0.5rem 2rem;
 }
 .continue {
   background-color: var(--side-bar);
   border-radius: 0.3rem;
-  color: #fff;
+  color: #868686777;
+  padding: 0.5rem 2rem;
   border: 0;
 }
 .overlay.show .modal {

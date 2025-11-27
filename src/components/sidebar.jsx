@@ -12,25 +12,37 @@ function Sidebar () {
           <div className="links">
             <ul>
               <li className="active">
-                <span className="material-symbols-outlined">grid_view</span>
-                overview
+                <Link to="/main">
+                  <span className="material-symbols-outlined">grid_view</span>
+                  overview
+                </Link>
               </li>
               <li>
-                <span className="material-symbols-outlined">credit_card</span>
-                <Link to='/payment'/>
+                <Link to="/payment">
+                  <span className="material-symbols-outlined">credit_card</span>
+                  payments
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/Member">
+                  <span className="material-symbols-outlined">groups</span>
+                  members
+                </Link>
               </li>
               <li>
-                <span className="material-symbols-outlined">groups</span>
-                members
+                <Link to="/transactions">
+                  <span className="material-symbols-outlined">swap_horiz</span>
+                  transactions
+                </Link>
               </li>
               <li>
-                <span className="material-symbols-outlined">swap_horiz</span>
-                transactions
+                <Link to="/settings">
+                  <span className="material-symbols-outlined">settings</span>
+                  settings
+                </Link>
               </li>
-              <li>
-                <span className="material-symbols-outlined">settings</span>
-                settings
-              </li>
+              {/* <Link to='/confirm'>confirmpayment</Link> */}
             </ul>
           </div>
         </div>

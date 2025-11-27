@@ -53,8 +53,8 @@ const Modal = ({ isOpen, onClose }) => {
               </select>
               <button className="addaccount">+ add new account</button>
             </div>
-            <div className="btns">
-              <button>cancel</button>
+            <div className="action-btn">
+              <button className="cancel-btn">cancel</button>
               <button className="continue">continue</button>
             </div>
           </div>

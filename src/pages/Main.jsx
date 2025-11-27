@@ -1,11 +1,10 @@
 import '../styles/main.css';
-import Body from './Body';
-import Sidebar from './sidebar';
+import Sidebar from '../components/sidebar';
+import Body from '../components/Body';
 
 function Main() {
   return (
    <section className="body">
-      <Sidebar />
       <Body />
    </section>
   );

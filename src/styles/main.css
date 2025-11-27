@@ -1,6 +1,13 @@
 @import url(base.css);
 
 .body{
+    /* position: absolute; */
+
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    /* background: rgb(204, 82, 103); */
+    width: 75%;
+    right: 0;
+    float: right;
+    /* padding: 1rem; */
 }

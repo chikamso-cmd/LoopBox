@@ -3,6 +3,9 @@
 .overview {
   padding: 1rem;
   border-bottom: 1px solid var(--outline-border);
+  width: 75%;
+  position: relative;
+  /* background: #000; */
 }
 .overview-content {
   display: flex;

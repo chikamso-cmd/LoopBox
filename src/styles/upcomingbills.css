@@ -1,6 +1,6 @@
 @import url(base.css);
 
-.upcomingbills-container{
+{
     width: 50%;
 }
 .upcomingbills-container h1{
@@ -61,5 +61,10 @@ font-size: .6rem;
 border: 1px solid var(--outline-border);
 padding:.5rem;
 border-radius: .4rem;
+}
+@media screen and (max-width:768px) {
+    .upcomingbills-container{
+width: 100%;
+    }
 }
 

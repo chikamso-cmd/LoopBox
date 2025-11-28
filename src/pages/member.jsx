@@ -5,7 +5,7 @@ import "../pages-styles/member.css";
 
 function Member() {
   return (
-      <div className="members">
+      <div className="member">
           <Button />
           <Data/>
     </div>

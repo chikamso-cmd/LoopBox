@@ -86,6 +86,9 @@ label {
   width: 100%;
   font-size: 14px;
 }
+.input-box input:disabled{
+  background: transparent;
+}
 
 select {
   width: 100%;

@@ -85,10 +85,10 @@ cursor: pointer;
   padding: .4rem 1rem;
   border-radius: .3rem;
 }
-.previous{
-  background: var(--side-bar);
-  color: #fff;
-  border: 0;
+.prev{
+  background: transparent;
+  color: var(--side-bar);
+  border: 1px solid #ccc;
   padding: .4rem 1rem;
   border-radius: .3rem;
 }

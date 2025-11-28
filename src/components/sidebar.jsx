@@ -2,16 +2,21 @@ import '../styles/sidebar.css';
 import logo from '../assets/logo.png'
 import '../styles/base.css';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 
-function Sidebar () {
+function Sidebar() {
+  
+const [isActive, setisActive] = useState(null)
+
+ 
     return (
       <section className="sidebar-container">
         <div className="sidebar-wrapper">
           <img src={logo} alt="loopbox-logo" />
           <div className="links">
             <ul>
-              <li className="active">
+              <li className={({ isActive }) => (isActive ? "active" : "")}>
                 <Link to="/main">
                   <span className="material-symbols-outlined">grid_view</span>
                   overview
@@ -42,6 +47,12 @@ function Sidebar () {
                   settings
                 </Link>
               </li>
+              <div className='logout'>
+                <Link to="/">
+                  <span className="material-symbols-outlined">login</span>
+                  logout
+                </Link>
+              </div>
               {/* <Link to='/confirm'>confirmpayment</Link> */}
             </ul>
           </div>

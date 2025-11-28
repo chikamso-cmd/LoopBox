@@ -29,7 +29,7 @@ function Addpayment({ isOpen, onClose }) {
             <input
               type="number"
               value=''
-              placeholder="10,000"
+              placeholder="10,000" readOnly disabled
             />
           </div>
 

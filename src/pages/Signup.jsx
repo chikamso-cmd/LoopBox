@@ -7,15 +7,15 @@ import { useEffect, useState } from "react";
 
 function Signup() {
 
-  // const [userInfo, setuserInfo] = useState({});
+  const [userInfo, setuserInfo] = useState({});
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
-  const [Password, setPassword] = useState('');
+  const [password, setPassword] = useState('');
   const [confirmPassword, setconfirmPassword] = useState('');
 
  async function register(userData) {
    try {
-     const response = await fetch(`http://localhost:5000/auth/register`, {
+     const response = await fetch(`http://localhost:5000/auth`, {
        method: 'POST',
        headers: {
          'content-type': 'application/json',
@@ -37,22 +37,31 @@ function Signup() {
   
   
   
-  const handleSubmit =  (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     console.log('i am a working function...');
 
-    const Payload = {
-      username: 'username',
-      email: 'email',
-      Password: 'password',
-      confirmPassword: 'confirmpassword'
+    const userData = {
+      username: username,
+      email: email,
+      password: password,
+      confirmPassword: confirmPassword
       
     };
+    try {
+      const result = await register(userData);
+      console.log('registration successful', result);
+      
 
+    } catch (error) {
+      console.log('registration failed', error);
+      
+      
+    }
 
     
-  }  
+  };
   
 
   return (
@@ -85,7 +94,7 @@ function Signup() {
             </div>
             <div className="passwords">
               <label className="password">password</label>
-              <input type="password" name="" id="password" placeholder="password..." required  value={Password} onChange={(e) => setPassword(e.target.value)}/>
+              <input type="password" name="" id="password" placeholder="password..." required  value={password} onChange={(e) => setPassword(e.target.value)}/>
             </div>
 
             <div className="confirms">

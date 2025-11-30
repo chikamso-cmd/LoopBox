@@ -12,7 +12,7 @@ function Login() {
 
   const handleSubmit = (e) => {
       e.preventDefault();
-      navigate('/')
+      navigate('/main');
   }
   
   

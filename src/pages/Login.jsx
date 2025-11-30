@@ -3,7 +3,17 @@ import logo from "../assets/logo.png";
 import { Link } from 'react-router-dom'
 import styles from '../modules/shared.module.css';
 
+import {useState} from 'react';
+import {useNavigate} from 'react-router-dom';
 function Login() {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  const handleSubmit = (e) => {
+      e.preventDefault();
+      navigate('/')
+  }
   
   
   return (
@@ -19,7 +29,7 @@ function Login() {
         <div className="login-form">
           <img src={logo} alt="loopbox-logo" />
           
-          <form className="form-container">
+          <form className="form-container" onSubmit={handleSubmit}>
             <h5>sign in to loopBox</h5>
             <p>
               you need to have registered and verify as a member before you can
@@ -60,7 +70,7 @@ function Login() {
           </form>
         </div>
       </div>
-      <Link to="/main">Main</Link>
+      {/*<Link to="/main">Main</Link>*/}
       {/* <Link to="/modal">Modal</Link> */}
     </section>
   );

@@ -9,10 +9,27 @@ function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
+  let passwordlength = 8;
+ 
 
   const handleSubmit = (e) => {
       e.preventDefault();
-      navigate('/main');
+      if (!email || !password) {
+        console.log('please fill all fields');
+        setError('incorrect email or password');
+        setTimeout(() => {
+          setError('')
+        }, 3000)
+        
+      }else{
+        console.log("welcome");
+        setError("");
+        setEmail("");
+        setPassword("");
+        navigate('/main');
+      }
+      
   }
   
   
@@ -35,6 +52,7 @@ function Login() {
               you need to have registered and verify as a member before you can
               proceed
             </p>
+            <p className="text-red-600 text-center ">{error}</p>
 
             <div className="email">
               <label>email</label>
@@ -43,7 +61,9 @@ function Login() {
                 name=""
                 id="email"
                 placeholder="email..."
-                required
+                
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="password">
@@ -53,7 +73,9 @@ function Login() {
                 name=""
                 id="password"
                 placeholder="password..."
-                required
+                
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <div className="radio">
